@@ -1,0 +1,52 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication2;
+
+/**
+ *
+ * @author lucas
+ */
+public class JavaApplication2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int dny = 1000;
+        int fl = 0;
+        //float time
+        for(int a= 0;a<1000;a++){
+            dny--;
+           
+            System.out.println("The train to Florida is "+dny+" miles from Florida");
+       if(dny%100==0){
+              System.out.println("THE TRAIN TO FLORIDA HAS "+dny/100+" HOURS TO GO");
+            }
+           for(int i=0; i<2;i++){
+                     if(fl<1000){
+               fl++;
+               System.out.println("The train to New York is "+fl+" miles from Florida");
+               if(fl%200==0){
+              System.out.println("THE TRAIN TO NEW YORK HAS "+fl/200+" HOURS TO GO");
+            }
+                     }
+             
+               if(dny==fl+1){
+                   
+                    
+                    System.out.println("*          *\n*          *\n*          *\n*          *\n*          *");
+                   System.out.println("The trains have crossed paths!!");
+                   System.out.println("*          *\n*          *\n*          *\n*          *\n*          *");
+                   
+                   
+              
+               }
+             }
+        }
+    }
+    
+}
